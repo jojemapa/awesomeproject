@@ -1,0 +1,16 @@
+import * as React from 'react';
+
+import Ionicons from 'react-native-vector-icons/Feather';
+
+import Colors from '../constants/Colors';
+
+export default function TabBarIcon(props) {
+  return (
+    <Ionicons
+      name={props.name}
+      size={14}
+      style={{marginBottom: -3}}
+      color={props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+    />
+  );
+}
